@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity" />
+
+
+<TextView
+    android:id="@+id/tvDistance"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:textAppearance="?attr/textAppearanceHeadline6"
+    android:layout_marginBottom="16dp"
+    android:layout_marginTop="8dp"
+    tools:text="A 3.2km de llegar"
+    app:layout_constraintStart_toStartOf="@id/tvName"
+    app:layout_constraintEnd_toEnd0f="parent"
+    app:layout_constraintTop_toBottomOf="@id/tvDestination" app:layout_constraintBottom_toTopOf="@id/btnFinish"/>
+
+<TextView
+    android:id="@+id/tvTotalDistance"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:textAppearance="?attr/textAppearanceSubtitle2"
+    android:layout_marginBottom="@dimen/common_padding_default"
+    android:layout_marginTop="@dimen/common_padding_min"
+    tools:text="A 3.2km de llegar"
+    app:layout_constraintStart_toStartOf="@id/tvName"
+    app:layout_constraintEnd_toEnd0f="parent"
+    app:layout_constraintTop_toBottomOf="@id/tvDestination"
+    app:layout_constraintBottom_toTopOf="@id/btnFinish"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+<TextView
+android:id="@+id/tvDestination"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+tools:text="A: Dirección del clients..."
+android:textAppearance="?attr/textAppearanceSubtitle2" app:layout_constraintStart_toStartOf="@id/tvName" app:layout_constraintEnd_toEnd0f="parent"
+app:layout_constraintTop_toBottomOf="@id/tv0rigin" />

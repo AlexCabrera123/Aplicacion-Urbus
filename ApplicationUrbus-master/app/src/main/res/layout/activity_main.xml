@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".MainActivity"
+    android:background="@drawable/back_color">
+
+
+    <TextView  android:id="@+id/tvBienvenido"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+
+        android:text="Bienvenido"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        />
+
+    <ImageView  android:id="@+id/IvLogoUrbus"
+
+        android:layout_width="105dp"
+        android:layout_height="91dp"
+        android:layout_alignLeft="@id/tvBienvenido"
+
+        android:layout_marginLeft="-144dp"
+
+
+        android:scaleType="fitCenter"
+        android:src="@drawable/urbus" />
+
+
+    <ImageButton  android:id="@+id/IBtHome"
+
+        android:layout_width="76dp"
+        android:layout_height="62dp"
+        android:layout_below="@id/IvLogoUrbus"
+        android:layout_alignLeft="@id/tvBienvenido"
+
+        android:layout_marginLeft="-129dp"
+        android:layout_marginTop="62dp"
+
+        android:backgroundTint="@color/material_dynamic_neutral0"
+        android:scaleType="fitCenter"
+        android:src="@drawable/home" />
+
+    <ImageButton  android:id="@+id/IBtConfiguracion"
+
+        android:layout_width="72dp"
+        android:layout_height="64dp"
+        android:layout_below="@id/IBtHome"
+        android:layout_alignLeft="@id/tvBienvenido"
+
+        android:layout_marginLeft="-126dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="@color/material_dynamic_neutral0"
+        android:scaleType="centerCrop"
+        android:src="@drawable/configuracion_sf" />
+
+    <ImageButton
+        android:id="@+id/CombisCatalogo"
+
+        android:layout_width="wrap_content"
+        android:layout_height="353dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="5dp" />
+
+    <Button
+        android:id="@+id/BtBotonMapa"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/CombisCatalogo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="11dp"
+        android:text="Mapa"
+
+        />
+
+    <fragment
+        android:id="@+id/map"
+
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="310dp"
+        android:layout_height="250dp"
+        android:layout_above="@+id/CombisCatalogo"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginEnd="11dp"
+
+        android:layout_marginBottom="48dp"
+        map:uiRotateGestures="true"
+        map:uiZoomControls="true" />
+
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainConfiguracion"
+    android:background="@drawable/back_color"
+    >
+
+
+    <TextView
+        android:id="@+id/tvConfiguracion"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="44dp"
+        android:text="Parte de configuracion usuario"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/IvLogoUrbus"
+
+        android:layout_width="76dp"
+        android:layout_height="74dp"
+        android:layout_alignLeft="@id/tvConfiguracion"
+
+        android:layout_marginLeft="-92dp"
+
+
+        android:scaleType="fitCenter"
+        android:src="@drawable/urbus" />
+
+    <ImageButton
+        android:id="@+id/IBtHome"
+
+        android:layout_width="76dp"
+        android:layout_height="62dp"
+        android:layout_below="@id/IvLogoUrbus"
+        android:layout_alignLeft="@id/tvConfiguracion"
+
+        android:layout_marginLeft="-93dp"
+        android:layout_marginTop="60dp"
+
+        android:backgroundTint="@color/material_dynamic_neutral0"
+        android:scaleType="fitCenter"
+        android:src="@drawable/home" />
+
+    <ImageButton
+        android:id="@+id/IBtConfiguracion"
+
+        android:layout_width="72dp"
+        android:layout_height="64dp"
+        android:layout_below="@id/IBtHome"
+        android:layout_alignLeft="@id/tvConfiguracion"
+
+        android:layout_marginLeft="-91dp"
+        android:layout_marginTop="9dp"
+        android:backgroundTint="@color/material_dynamic_neutral0"
+        android:scaleType="centerCrop"
+        android:src="@drawable/configuracion_sf" />
+</RelativeLayout>

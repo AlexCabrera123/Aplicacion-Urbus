@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My ApplicationUrbus</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="tracking_origin">De: %s</string>
+    <string name="tracking_destination">De: %</string>
+    <string name="tracking_total_distance">Distancia de ruta: %</string>
+
+
+</resources>
